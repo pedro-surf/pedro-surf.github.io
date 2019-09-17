@@ -11,12 +11,7 @@ function Contact(props) {
 				<form className="col s12">
 					<div className="row">
 						<div className="input-field col s6">
-							<input
-								placeholder="Placeholder"
-								id="first_name"
-								type="text"
-								className="validate"
-							/>
+							<input id="first_name" type="text" className="validate" />
 							<label for="first_name">First Name</label>
 						</div>
 						<div className="input-field col s6">
@@ -24,18 +19,7 @@ function Contact(props) {
 							<label for="last_name">Last Name</label>
 						</div>
 					</div>
-					<div className="row">
-						<div className="input-field col s12">
-							<input
-								disabled
-								value="I am not editable"
-								id="disabled"
-								type="text"
-								className="validate"
-							/>
-							<label for="disabled">Disabled</label>
-						</div>
-					</div>
+
 					<div className="row">
 						<div className="input-field col s12">
 							<input id="password" type="password" className="validate" />
@@ -56,8 +40,8 @@ function Contact(props) {
 								<label for="email_inline">Email</label>
 								<span
 									className="helper-text"
-									data-error="wrong"
-									data-success="right"
+									data-error="Invalid e-mail"
+									data-success="Ok."
 								>
 									Helper text
 								</span>
