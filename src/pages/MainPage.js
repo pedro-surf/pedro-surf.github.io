@@ -15,11 +15,10 @@ export default class MainPage extends React.Component {
 	render() {
 		return (
 			<div className="psyk">
-				<header className="App-header">
-					<p className="flow-text text-lighten-4 grey-text">
-						<em> Greetings! It's nice to have you here.</em>
-					</p>
-				</header>
+				<span>
+					<em> Greetings! It's nice to have you here.</em>
+				</span>
+
 				<div className="row">
 					<div className="col s12 m6">
 						<i className="medium material-icons">collections</i>

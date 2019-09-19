@@ -11,7 +11,14 @@ import MainPage from "./pages/MainPage";
 class App extends Component {
 	render() {
 		return (
-			<div className="App">
+			<div
+				className="App"
+				style={{
+					marginTop: "0px",
+					height: `${window.innerHeight}px`,
+					top: "0rem",
+				}}
+			>
 				<Router basename={window.location.pathname || ""}>
 					<Route exact path="/" component={MainPage} />
 					<Route exact path="/letter" component={CoverLetter} />
