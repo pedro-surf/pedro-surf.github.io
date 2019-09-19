@@ -40,13 +40,15 @@ export default function Scholar(props) {
 						</div>
 					</div>
 					<div style={{ padding: "0.2rem" }} className="card hoverable">
-						<span>
-							{" "}
-							<i className=" material-icons">blur_off</i>Energy Engineering
-						</span>{" "}
-						<div className="progress">
-							<div className="determinate" style={{ width: "44%" }}>
+						<div className="card-content">
+							<span>
 								{" "}
+								<i className=" material-icons">blur_off</i>Energy Engineering
+							</span>{" "}
+							<div className="progress">
+								<div className="determinate" style={{ width: "44%" }}>
+									{" "}
+								</div>
 							</div>
 						</div>
 					</div>

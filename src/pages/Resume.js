@@ -133,10 +133,7 @@ export default class Resume extends React.Component {
 							btn="Web DevOps"
 							html={
 								<ul className="collection">
-									<ListItem
-										txt="HTTPS certification"
-										txtColor="text-darken-3 green"
-									/>
+									<ListItem txt="Redis" txtColor="text-darken-3 green" />
 
 									<ListItem txt="Grunt, Gulp" txtColor="text-darken-3 green" />
 
@@ -156,7 +153,11 @@ export default class Resume extends React.Component {
 										txtColor="text-darken-3 green"
 									/>
 									<ListItem
-										txt="Heroku, AWS, Netlify"
+										txt="Heroku, AWS, Netlify (basics)"
+										txtColor="text-darken-3 green"
+									/>
+									<ListItem
+										txt="Visual Studio and C#"
 										txtColor="text-darken-3 green"
 									/>
 									<ListItem txt="HTML5" txtColor="text-darken-3 green" />
@@ -171,7 +172,7 @@ export default class Resume extends React.Component {
 
 									<ListItem txt="TLS" txtColor="text-darken-3 green" />
 									<ListItem
-										txt="SMTP, PHPMailer"
+										txt="SMTP with PHPMailer"
 										txtColor="text-darken-3 green"
 									/>
 								</ul>

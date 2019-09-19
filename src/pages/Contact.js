@@ -1,54 +1,48 @@
 import React from "react";
+import ListItem from "../components/ListItem";
 import { Link } from "react-router-dom";
 function Contact(props) {
 	return (
 		<div className="container">
-			<Link className="btn " to="/">
-				Back to Main Page
-			</Link>
+			<div className="row">
+				{" "}
+				<Link className="btn" to="/">
+					Back to Main Page
+				</Link>{" "}
+				<Link className="btn red" to="/cv">
+					Go to Resume
+				</Link>{" "}
+				<Link className="btn red" to="/scholar">
+					See my Scholar info
+				</Link>{" "}
+				<Link className="btn blue" to="/letter">
+					Read Cover Letter
+				</Link>
+			</div>
 
 			<div className="row">
-				<form className="col s12">
-					<div className="row">
-						<div className="input-field col s6">
-							<input id="first_name" type="text" className="validate" />
-							<label for="first_name">First Name</label>
-						</div>
-						<div className="input-field col s6">
-							<input id="last_name" type="text" className="validate" />
-							<label for="last_name">Last Name</label>
-						</div>
-					</div>
-
-					<div className="row">
-						<div className="input-field col s12">
-							<input id="password" type="password" className="validate" />
-							<label for="password">Password</label>
-						</div>
-					</div>
-					<div className="row">
-						<div className="input-field col s12">
-							<input id="email" type="email" className="validate" />
-							<label for="email">Email</label>
-						</div>
-					</div>
-					<div className="row">
-						<div className="col s12">
-							This is an inline input field:
-							<div className="input-field inline">
-								<input id="email_inline" type="email" className="validate" />
-								<label for="email_inline">Email</label>
-								<span
-									className="helper-text"
-									data-error="Invalid e-mail"
-									data-success="Ok."
-								>
-									Helper text
-								</span>
-							</div>
-						</div>
-					</div>
-				</form>
+				<div className="col s6">
+					<ul className="collection">
+						<ListItem txt="E-mail" />
+						<ListItem txt="GitHub" />
+						<ListItem txt="LinkedIn" />
+					</ul>
+				</div>
+				<div className="col s6">
+					<ul className="collection">
+						<ListItem txt="pedroaki.55@gmail.com" />
+						<ListItem
+							target="_blank"
+							to="http://www.github.com/pedro-surf"
+							txt="http://www.github.com/pedro-surf"
+						/>
+						<ListItem
+							target="_blank"
+							to="http://www.linkedin.com/in/pedro-surf"
+							txt="http://www.linkedin.com/in/pedro-surf"
+						/>
+					</ul>
+				</div>
 			</div>
 		</div>
 	);
