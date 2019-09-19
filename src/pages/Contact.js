@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 function Contact(props) {
 	return (
 		<div className="container">
-			<div className="row">
+			<div className="row" style={{ marginTop: "1rem" }}>
 				{" "}
 				<Link className="btn" to="/">
 					Back to Main Page
 				</Link>{" "}
-				<Link className="btn red" to="/cv">
+				<Link className="btn green" to="/cv">
 					Go to Resume
 				</Link>{" "}
 				<Link className="btn red" to="/scholar">

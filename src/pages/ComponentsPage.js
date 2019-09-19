@@ -12,7 +12,7 @@ export default class ComponentsPage extends React.Component {
 	render() {
 		return (
 			<div className="container">
-				<div className="row">
+				<div className="row" style={{ marginTop: "1rem" }}>
 					<Link className="btn " to="/">
 						Back to Main Page
 					</Link>
