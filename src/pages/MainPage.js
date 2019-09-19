@@ -21,16 +21,12 @@ export default class MainPage extends React.Component {
 					</p>
 				</header>
 				<div className="row">
-					<div className="col s6">
-						<h2
-							style={{ marginTop: "-1rem" }}
-							className="white-text left-align"
-						>
-							<i className="medium material-icons">collections</i>
-							<i className="medium material-icons">color_lens</i>
-							<i className="medium material-icons">build</i>
-							<i className="medium material-icons">code</i>
-							<br />
+					<div className="col s12 m6">
+						<i className="medium material-icons">collections</i>
+						<i className="medium material-icons">color_lens</i>
+						<i className="medium material-icons">build</i>
+						<i className="medium material-icons">code</i>
+						<h2 className="white-text left-align">
 							I'm Pedro Silveira, web developer. At your service.{" "}
 						</h2>
 					</div>

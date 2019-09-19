@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import M from "materialize-css";
-import Toggler from "../components/Toggler";
 import CarouselGallery from "../components/CarouselGallery";
 import Slider from "../components/Slider";
 
