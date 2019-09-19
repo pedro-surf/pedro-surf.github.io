@@ -6,6 +6,7 @@ import CoverLetter from "./pages/CoverLetter";
 import Contact from "./pages/Contact";
 import Scholar from "./pages/Scholar";
 import Resume from "./pages/Resume";
+import ComponentsPage from "./pages/ComponentsPage";
 import MainPage from "./pages/MainPage";
 class App extends Component {
 	render() {
@@ -14,6 +15,7 @@ class App extends Component {
 				<Router basename={window.location.pathname || ""}>
 					<Route exact path="/" component={MainPage} />
 					<Route exact path="/letter" component={CoverLetter} />
+					<Route exact path="/components" component={ComponentsPage} />
 					<Route exact path="/scholar" component={Scholar} />
 					<Route exact path="/contact" component={Contact} />
 					<Route exact path="/cv" component={Resume} />

@@ -5,7 +5,7 @@ const ListItem = props => (
 		href={props.to || ""}
 		rel="noopener noreferrer"
 		target={props.target}
-		className={`collection-item ${props.txtColor}-text`}
+		className={`collection-item ${props.txtColor}-text waves-effect`}
 	>
 		{props.icn ? <i className="tiny material-icons">{props.icn}</i> : ""}
 		{"  "}
