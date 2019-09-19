@@ -5,7 +5,7 @@
 	"homepage": "https://pedro-surf.github.io/",
 	"dependencies": {
 		"jquery": "^3.4.1",
-		"materialize-css": "^1.0.0-rc.2",
+		"materialize-css": "^1.0.0",
 		"react": "^16.9.0",
 		"react-dom": "^16.9.0",
 		"react-router-dom": "^5.0.1",

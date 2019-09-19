@@ -4,6 +4,7 @@ import "../App.css";
 import M from "materialize-css";
 import ToolTip from "../components/ToolTip";
 import Toggler from "../components/Toggler";
+import HorizontalCard from "../components/HorizontalCard";
 import ListItem from "../components/ListItem";
 export default class MainPage extends React.Component {
 	componentDidMount() {
@@ -21,10 +22,26 @@ export default class MainPage extends React.Component {
 
 				<div className="row">
 					<div className="col s12 m6">
-						<i className="medium material-icons">collections</i>
-						<i className="medium material-icons">color_lens</i>
-						<i className="medium material-icons">build</i>
-						<i className="medium material-icons">code</i>
+						<ToolTip
+							tTipText="Design"
+							pos="bottom"
+							tTipBtn={
+								<span>
+									<i className="medium material-icons">collections</i>
+									<i className="medium material-icons">color_lens</i>
+								</span>
+							}
+						/>
+						<ToolTip
+							tTipText="Software Engineering and Code!"
+							pos="bottom"
+							tTipBtn={
+								<span>
+									<i className="medium material-icons">build</i>
+									<i className="medium material-icons">code</i>
+								</span>
+							}
+						/>
 						<h2 className="white-text left-align">
 							I'm Pedro Silveira, web developer. At your service.{" "}
 						</h2>
@@ -148,39 +165,66 @@ export default class MainPage extends React.Component {
 					</div>
 				</div>
 				<div className="container">
-					<p className="flow-text">
-						Currently, I work mainly with the {"  "}
-						<span>
-							<ToolTip
-								tTipBtn="M"
-								pos="top"
-								tTipText="Mongoose"
-								color="text-darken-3 white"
-							></ToolTip>
-							<ToolTip
-								color="text-darken-3 yellow"
-								tTipBtn="E"
-								pos="bottom"
-								tTipText="Express"
-							></ToolTip>
-							<ToolTip
-								tTipBtn="R"
-								pos="top"
-								tTipText="React"
-								color="white"
-							></ToolTip>
-							<ToolTip
-								color="text-darken-3 yellow"
-								tTipBtn="N"
-								pos="bottom"
-								tTipText="Node.js"
-							></ToolTip>{" "}
-							stack. Besides freelancing, I'm also looking for a remote position
-							(part or full-time) within this stack. This SPA was built with{" "}
-							<em>create-react-app</em> and published on GitHub Pages in Sep
-							17th, 2019.
-						</span>
-					</p>
+					<div className="row">
+						<p className="flow-text">
+							Currently, I work mainly with the {"  "}
+							<span>
+								<ToolTip
+									tTipBtn="M"
+									pos="top"
+									tTipText="Mongoose"
+									color="text-darken-3 white"
+								></ToolTip>
+								<ToolTip
+									color="text-darken-3 yellow"
+									tTipBtn="E"
+									pos="bottom"
+									tTipText="Express"
+								></ToolTip>
+								<ToolTip
+									tTipBtn="R"
+									pos="top"
+									tTipText="React"
+									color="white"
+								></ToolTip>
+								<ToolTip
+									color="text-darken-3 yellow"
+									tTipBtn="N"
+									pos="bottom"
+									tTipText="Node.js"
+								></ToolTip>{" "}
+								stack. Besides freelancing, I'm also looking for a remote
+								position (part or full-time) within this stack. This SPA was
+								built with <em>create-react-app</em> and published on GitHub
+								Pages in Sep 17th, 2019.
+							</span>
+						</p>
+					</div>
+					<div className="row">
+						<div className="col s12 m6">
+							<HorizontalCard
+								img={
+									<span className="valign-wrapper">
+										<i className="large material-icons">code</i>
+									</span>
+								}
+								txt="I work seriously and committed, and I'm often learning new techs and trying to figure out what's the best option to bring solutions. "
+							/>{" "}
+						</div>
+					</div>
+					<div className="row">
+						<div className="col s12 m6">
+							{" "}
+							<HorizontalCard
+								img={
+									<span>
+										<i className="large material-icons">school</i>
+									</span>
+								}
+								txt="Engineering is a long career. Therefore I'm seeking for job oportunities oversea. Feel free to contact me."
+							/>{" "}
+						</div>
+					</div>
 				</div>
 			</div>
 		);
