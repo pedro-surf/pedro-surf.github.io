@@ -9,6 +9,7 @@ caption {
 	background: transparent;
 }
 body {
+	height: inherit;
 	margin: 0;
 	padding: 0;
 	border: 0;
