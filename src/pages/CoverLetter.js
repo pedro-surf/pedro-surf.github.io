@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 function CoverLetter(props) {
 	return (
-		<div>
+		<div className="container">
 			<p className="flow-text">
 				Below you can find my extensive cover letter.
 				<Link className="btn " to="/">

@@ -211,8 +211,7 @@ export default class MainPage extends React.Component {
 								txt="I work seriously and committed, and I'm often learning new techs and trying to figure out what's the best option to bring solutions. "
 							/>{" "}
 						</div>
-					</div>
-					<div className="row">
+
 						<div className="col s12 m6">
 							{" "}
 							<HorizontalCard
