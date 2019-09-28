@@ -158,7 +158,7 @@ export default class MainPage extends React.Component {
 							<Toggler
 								color="lighten-3 red	"
 								icn="center_focus_weak"
-								btn="Components Showcase"
+								btn="Slider Galleries from Materialize"
 								html={<div></div>}
 							/>{" "}
 						</Link>
@@ -208,7 +208,13 @@ export default class MainPage extends React.Component {
 										<i className="large material-icons">code</i>
 									</span>
 								}
-								txt="I work seriously and committed, and I'm often learning new techs and trying to figure out what's the best option to bring solutions. "
+								txtHead={"To work hard and seriously  "}
+								txt="to master new techs and figure out what's the best option to deliver solutions for each faced issue. Learn any stack/tool used in a project, in order to work properly with other developers."
+								link2={"Check Skills"}
+								link2To={"/cv"}
+								link1={"Contact Me"}
+								link1To={"/contact"}
+								title="Goals"
 							/>{" "}
 						</div>
 
@@ -220,7 +226,13 @@ export default class MainPage extends React.Component {
 										<i className="large material-icons">school</i>
 									</span>
 								}
-								txt="Engineering is a long career. Therefore I'm seeking for job oportunities oversea. Feel free to contact me."
+								txtHead={"Engineering is a long career, but "}
+								txt="I want to get a job. That will help me improve and grow as a developer. Real, industry-level projects are much more exciting than small projects for freelancing/studying. Feel free to contact me."
+								link1={"Check Skills"}
+								link1To={"/cv"}
+								link2={"Read Cover Letter"}
+								link2To={"/letter"}
+								title="Hire Me"
 							/>{" "}
 						</div>
 					</div>

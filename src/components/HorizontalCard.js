@@ -1,13 +1,17 @@
 import React from "react";
 
 const HorizontalCard = props => (
-	<div className="col s12 m7">
-		<h2 className="header">Horizontal Card</h2>
+	<div className="col s12">
+		<h4 className="header">{props.title}</h4>
 		<div className="card horizontal">
 			<div className="card-image">{props.img}</div>
 			<div className="card-stacked">
 				<div className="card-content">
-					<p>{props.txt}</p>
+					<p style={{ color: "black" }}>
+						{" "}
+						<span className="flow-text">{props.txtHead} </span>
+						{props.txt}
+					</p>
 				</div>
 
 				<a href={props.link1To}>{props.link1 ? props.link1 : ""}</a>

@@ -20,7 +20,7 @@ export default class Resume extends React.Component {
 				</div>
 
 				<div className="row">
-					<div className="col s4">
+					<div className="col s12 m4">
 						<Toggler
 							color="purple lighten-4 "
 							icn="developer_mode"
@@ -58,7 +58,7 @@ export default class Resume extends React.Component {
 						<Toggler
 							color="yellow lighten-3 "
 							icn="developer_mode"
-							btn="JavaScript"
+							btn="JS"
 							html={
 								<ul className="collection">
 									<Toggler
