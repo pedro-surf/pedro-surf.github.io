@@ -13,13 +13,8 @@ class App extends Component {
 		return (
 			<div
 				className="App"
-				style={{
-					marginTop: "0px",
-					height: `${window.innerHeight}px`,
-					top: "0rem",
-				}}
 			>
-				<Router basename={window.location.pathname || ""}>
+				<Router>
 					<Route exact path="/" component={MainPage} />
 					<Route exact path="/letter" component={CoverLetter} />
 					<Route exact path="/components" component={ComponentsPage} />
