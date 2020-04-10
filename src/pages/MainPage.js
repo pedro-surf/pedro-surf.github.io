@@ -238,7 +238,7 @@ export default class MainPage extends React.Component {
             />
           </div>
         </div>
-        <h2>My mission is...</h2>
+        <h2 className="black-text">My mission is...</h2>
         <div className="row">
           <div className="col s12 m6">
             <HorizontalCard
