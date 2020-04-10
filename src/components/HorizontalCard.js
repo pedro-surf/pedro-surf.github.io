@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HorizontalCard = props => (
 	<div className="col s12">
-		<h4 className="header green-text">{props.title}</h4>
+		<h4 className="header grey-text text-darken-2">{props.title}</h4>
 		<div className="card horizontal">
 			<div className="card-image">{props.img}</div>
 			<div className="card-stacked">
