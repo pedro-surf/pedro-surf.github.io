@@ -6,6 +6,8 @@ const ListItem = props => (
 		rel="noopener noreferrer"
 		target={props.target}
 		className={`collection-item ${props.txtColor}-text waves-effect`}
+		style={{ cursor: props.pointer ? 'pointer' : 'initial',
+	padding: '0.6em' }}
 	>
 		{props.icn ? <i className="tiny material-icons">{props.icn}</i> : ""}
 		{"  "}

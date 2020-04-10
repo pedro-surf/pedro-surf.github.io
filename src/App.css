@@ -1,12 +1,16 @@
 .App {
 	text-align: center;
 	color: rgb(202, 187, 168);
+	min-height: 100vh;
+	width: 100%;
+	margin: 0;
 }
 
 .psyk {
 	background: url("./pages/img/motherforest.jpg");
-	background-size: cover;
 	background-repeat: no-repeat;
+	min-height: 100%;
+	margin: 0;
 }
 .darker {
 	background-color: rgba(0, 0, 0, 0.3);

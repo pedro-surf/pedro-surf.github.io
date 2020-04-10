@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HorizontalCard = props => (
 	<div className="col s12">
@@ -14,8 +15,8 @@ const HorizontalCard = props => (
 					</p>
 				</div>
 
-				<a href={props.link1To}>{props.link1 ? props.link1 : ""}</a>
-				<a href={props.link2To}>{props.link2 ? props.link2 : ""}</a>
+				<Link className="flow-text" to={props.link1To}>{props.link1 ? props.link1 : ""}</Link>
+				<Link to={props.link2To}>{props.link2 ? props.link2 : ""}</Link>
 			</div>
 		</div>
 	</div>
