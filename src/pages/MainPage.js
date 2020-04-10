@@ -17,16 +17,16 @@ export default class MainPage extends React.Component {
     return (
       <div className="psyk">
         <span>
-          <em> Greetings! It's nice to have you here.</em>
+          <em> Oh, a guest! Welcome, it's nice to have you here.</em>
         </span>
 
         <div className="row">
-          <div className="col s12 m6" style={{ cursor: "pointer" }}>
+          <div className="col s12 m6">
             <ToolTip
               tTipText="Front-end"
               pos="bottom"
               tTipBtn={
-                <span>
+                <span style={{ cursor: 'pointer' }}>
                   <i className="medium material-icons">collections</i>
                   <i className="medium material-icons">color_lens</i>
                 </span>
@@ -36,7 +36,7 @@ export default class MainPage extends React.Component {
               tTipText="Back-end"
               pos="bottom"
               tTipBtn={
-                <span>
+                <span style={{ cursor: 'pointer' }}>
                   <i className="medium material-icons">build</i>
                   <i className="medium material-icons">code</i>
                 </span>
@@ -94,7 +94,7 @@ export default class MainPage extends React.Component {
 
             <Toggler
               icn="dashboard"
-              btn="Recent Projects"
+              btn="Projects I've worked on recently"
               color="green lighten-2 "
               html={
                 <div className="container">
@@ -103,74 +103,113 @@ export default class MainPage extends React.Component {
                       target="_blank"
                       to="http://www.3senergias.com.br/"
                       icn="battery_charging_full"
-                      txt="Energy Company Website"
+                      txt="3S Website"
                       txtColor="text-darken-4 red"
+                      pointer
                     />
 
                     <ListItem
+                      pointer
                       to="https://github.com/ldseinhardt/moodle-dashboard"
                       target="_blank"
                       icn="school"
-                      txt="CoffeeScript Moodle Plugin"
-                      txtColor=" darken-1 amber"
+                      txt="Moodle Chrome Extension"
+                      txtColor="text-darken-3 green"
+                    />
+                    <ListItem
+                      pointer
+                      to="https://github.com/factn/resilience-app"
+                      target="_blank"
+                      icn="healing"
+                      txt="MutualAid.World Open-Source App"
+                      txtColor="text-darken-3 grey"
+                    />
+
+                    <ListItem
+                      pointer
+                      to="https://vestidasdebranco.com.br"
+                      target="_blank"
+                      icn="storefront"
+                      txt="Vestidas de Branco"
+                      txtColor="text-darken-3 orange"
+                    />
+
+                    <ListItem
+                      pointer
+                      to="https://debuth.com"
+                      target="_blank"
+                      icn="emoji_symbols"
+                      txt="Debuth"
+                      txtColor="text-darken-3 purple"
                     />
                   </ul>
                 </div>
               }
             />
-            {/*<Link
-								className="collection-item blue-text text-darken-3"
-								to="/components"
-							>
-								<Toggler
-									color="lighten-3 red	"
-									icn="center_focus_weak"
-									btn="Slider Galleries from Materialize"
-									html={<div></div>}
-								/>{" "}
-							</Link>*/}
+            <a
+              className="collection-item blue-text text-darken-3"
+              href="https://www.github.com/pedro-surf/My_Javascript_Articlepedia"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Toggler
+                color="lighten-3 red	"
+                icn="center_focus_weak"
+                btn={ <ToolTip
+                  tTipText="Go to GitHub Repository"
+                  pos="bottom"
+                  tTipBtn="Programming Articles"
+                />}
+              />{" "}
+            </a>
           </div>
         </div>
         <div className="row">
           <p className="flow-text">
             I'm a Computer Engineering student at
-            <ListItem
-              target="_blank"
-              to="https://ufsc.br/"
-              txt="UFSC"
-              txtColor="text-darken-4 yellow"
-              pointer
+            <ToolTip
+              tTipText="Universidade Federal de Santa Catarina"
+              pos="top"
+              tTipBtn={
+                <ListItem
+                  target="_blank"
+                  to="https://ufsc.br/"
+                  txt="UFSC"
+                  txtColor="text-darken-4 yellow"
+                  pointer
+                />
+              }
             />
           </p>
           <p className="flow-text">
-              I work mainly with the {"  "}
-            <span style={{ cursor: "pointer", fontSize: '34px' }}>
+            I work mainly with the {"  "}
+            <span style={{ cursor: "pointer", fontSize: "34px" }}>
               <ToolTip
                 tTipBtn="M"
                 pos="top"
                 tTipText="Mongoose"
-                color="text-darken-3 white"
+                color="text-accent-2 blue"
               ></ToolTip>
               <ToolTip
                 color="text-darken-3 yellow"
                 tTipBtn="E"
-                pos="bottom"
+                pos="top"
                 tTipText="Express"
               ></ToolTip>
               <ToolTip
                 tTipBtn="R"
                 pos="top"
                 tTipText="React"
-                color="white"
+                color="text-accent-2 blue"
               ></ToolTip>
               <ToolTip
                 color="text-darken-3 yellow"
                 tTipBtn="N"
-                pos="bottom"
+                pos="top"
                 tTipText="Node.js"
               ></ToolTip>{" "}
             </span>
-            stack. Find me on social media and connect.
+            stack.
           </p>
           <div className="row flow-text ">
             <ListItem
@@ -199,6 +238,7 @@ export default class MainPage extends React.Component {
             />
           </div>
         </div>
+        <h2>My mission is...</h2>
         <div className="row">
           <div className="col s12 m6">
             <HorizontalCard
@@ -208,12 +248,10 @@ export default class MainPage extends React.Component {
                 </span>
               }
               txtHead={"To build a fair and equal world,  "}
-              txt="having fun and helping people, the same way they did once for me."
-			  link2={"Cover Letter"}
-              link2To={"/letter"}
-              link1={"Contact Me"}
-              link1To={"/contact"}
-              title="Mission"
+              txt="being able to help people the same way they once did for me. Having fun, meanwhile. Smile is great and so is enjoying life, right?"
+              link1={"Cover Letter"}
+              link1To={"/letter"}
+              title="As a Human"
             />{" "}
           </div>
 
@@ -225,11 +263,11 @@ export default class MainPage extends React.Component {
                   <i className="large material-icons">school</i>
                 </span>
               }
-              txtHead={"As a developer I'm always pushing "}
-              txt="myself to learn new technologies and find the best option to deliver solutions for a task. My efforts are to be able to learn any stack/tool used in a project, to properly work with designers and other Devs."
+              txtHead={"I'm pushing efforts "}
+              txt="to learn new technologies, search the best options to deliver solutions, understand stack/tools in use to work with designers and other Devs."
               link1={"Check Skills"}
               link1To={"/cv"}
-              title="Developer"
+              title="As a Developer"
             />{" "}
           </div>
         </div>

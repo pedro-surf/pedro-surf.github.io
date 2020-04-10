@@ -8,6 +8,7 @@ import Scholar from "./pages/Scholar";
 import Resume from "./pages/Resume";
 import ComponentsPage from "./pages/ComponentsPage";
 import MainPage from "./pages/MainPage";
+import ScrollToTop from "./ScrollToTop";
 class App extends Component {
 	render() {
 		return (
@@ -15,6 +16,7 @@ class App extends Component {
 				className="App"
 			>
 				<Router>
+					<ScrollToTop />
 					<Route exact path="/" component={MainPage} />
 					<Route exact path="/letter" component={CoverLetter} />
 					<Route exact path="/components" component={ComponentsPage} />

@@ -2,7 +2,7 @@ import React from "react";
 
 const ListItem = props => (
 	<a
-		href={props.to || ""}
+		href={props.to || null}
 		rel="noopener noreferrer"
 		target={props.target}
 		className={`collection-item ${props.txtColor}-text waves-effect`}
