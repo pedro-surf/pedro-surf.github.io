@@ -74,23 +74,6 @@ export default class MainPage extends React.Component {
                       {"  "}
                       Scholar info
                     </Link>
-                    <li className="collection-item active">
-                      This project uses:
-                    </li>
-                    <ListItem
-                      target="_blank"
-                      to="https://github.com/facebook/react"
-                      icn="center_focus_weak"
-                      txt="React"
-                      txtColor="text-darken-4 yellow"
-                    />
-                    <ListItem
-                      target="_blank"
-                      to="https://materializecss.com/"
-                      icn="border_color"
-                      txt="Materialize"
-                      txtColor="text-darken-4 red"
-                    />
                   </ul>
                 }
               />
@@ -102,6 +85,14 @@ export default class MainPage extends React.Component {
                 html={
                   <div className="container">
                     <ul className="collection">
+                      <ListItem
+                        target="_blank"
+                        to="http://www.luxurypresence.com"
+                        icn="real_estate_agent"
+                        txt="Luxury Presence"
+                        txtColor="text-darken-4 black"
+                        pointer
+                      />
                       <ListItem
                         target="_blank"
                         to="http://www.3senergias.com.br/"
@@ -149,24 +140,6 @@ export default class MainPage extends React.Component {
                   </div>
                 }
               />
-              <a
-                className="collection-item blue-text text-darken-3"
-                href="https://www.github.com/pedro-surf/My_Javascript_Articlepedia"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Toggler
-                  color="lighten-3 red	"
-                  icn="center_focus_weak"
-                  btn={
-                    <ToolTip
-                      tTipText="Go to GitHub Repository"
-                      pos="bottom"
-                      tTipBtn="Programming Articles"
-                    />
-                  }
-                />{" "}
-              </a>
             </div>
           </div>
           <div className="row">
@@ -174,7 +147,7 @@ export default class MainPage extends React.Component {
               I'm a Computer Engineering student at
               <ToolTip
                 tTipText="Universidade Federal de Santa Catarina"
-                pos="top"
+                // pos="top"
                 tTipBtn={
                   <ListItem
                     target="_blank"
@@ -219,32 +192,32 @@ export default class MainPage extends React.Component {
           </div>
         </div>
         <div className="container">
-        <div className="row flow-text ">
-              <ListItem
-                target="_blank"
-                to="https://www.github.com/pedro-surf"
-                icn="flare"
-                txt="GitHub"
-                txtColor="text-darken-4 yellow"
-                pointer
-              />
-              <ListItem
-                target="_blank"
-                to="https://www.linkedin.com/in/pedro-surf"
-                icn="flip_to_front"
-                txt="LinkedIn"
-                txtColor="text-accent-2 blue"
-                pointer
-              />
-              <ListItem
-                target="_blank"
-                to="https://www.facebook.com/pedrosilveira97"
-                icn="folder_shared"
-                txt="Facebook"
-                txtColor="text-darken-4 blue"
-                pointer
-              />
-            </div>
+          <div className="row flow-text ">
+            <ListItem
+              target="_blank"
+              to="https://www.github.com/pedro-surf"
+              icn="flare"
+              txt="GitHub"
+              txtColor="text-darken-4 yellow"
+              pointer
+            />
+            <ListItem
+              target="_blank"
+              to="https://www.linkedin.com/in/pedro-surf"
+              icn="flip_to_front"
+              txt="LinkedIn"
+              txtColor="text-accent-2 blue"
+              pointer
+            />
+            <ListItem
+              target="_blank"
+              to="https://www.facebook.com/pedrosilveira97"
+              icn="folder_shared"
+              txt="Facebook"
+              txtColor="text-darken-4 blue"
+              pointer
+            />
+          </div>
           <h2 className="grey-text text-darken-2">My mission is...</h2>
           <div className="row">
             <div className="col s12 m6">
@@ -257,7 +230,7 @@ export default class MainPage extends React.Component {
                   </span>
                 }
                 txtHead={"To build a fair and equal world,  "}
-                txt="being able to help people the same way they once did for me. Having fun, meanwhile. Smile is great and so is enjoying life, right?"
+                txt="Helping people and their businesses thrive—just as others once did for me. Enjoying the process and keeping a smile along the way."
                 link1={"Cover Letter"}
                 link1To={"/letter"}
                 title="as a Human"
@@ -279,6 +252,25 @@ export default class MainPage extends React.Component {
                 title="as a Dev"
               />{" "}
             </div>
+          </div>
+          <div className="row">
+            <li className="collection-item active text black">
+              This project uses:
+            </li>
+            <ListItem
+              target="_blank"
+              to="https://github.com/facebook/react"
+              icn="center_focus_weak"
+              txt="React"
+              txtColor="text-darken-4 yellow"
+            />
+            <ListItem
+              target="_blank"
+              to="https://materializecss.com/"
+              icn="border_color"
+              txt="Materialize"
+              txtColor="text-darken-4 red"
+            />
           </div>
         </div>
       </>
