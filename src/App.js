@@ -10,23 +10,21 @@ import ComponentsPage from "./pages/ComponentsPage";
 import MainPage from "./pages/MainPage";
 import ScrollToTop from "./ScrollToTop";
 class App extends Component {
-	render() {
-		return (
-			<div
-				className="App"
-			>
-				<Router>
-					<ScrollToTop />
-					<Route exact path="/" component={MainPage} />
-					<Route exact path="/letter" component={CoverLetter} />
-					<Route exact path="/components" component={ComponentsPage} />
-					<Route exact path="/scholar" component={Scholar} />
-					<Route exact path="/contact" component={Contact} />
-					<Route exact path="/cv" component={Resume} />
-				</Router>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div className="App">
+        <Router>
+          <ScrollToTop />
+          <Route exact path="/" component={MainPage} />
+          <Route exact path="/letter" component={CoverLetter} />
+          <Route exact path="/components" component={ComponentsPage} />
+          <Route exact path="/scholar" component={Scholar} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/cv" component={Resume} />
+        </Router>
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -80,7 +80,7 @@ export default class MainPage extends React.Component {
 
               <Toggler
                 icn="dashboard"
-                btn="Projects I've worked on recently"
+                btn="Some of my recent projects"
                 color="green lighten-2 "
                 html={
                   <div className="container">
@@ -95,10 +95,26 @@ export default class MainPage extends React.Component {
                       />
                       <ListItem
                         target="_blank"
+                        to="https://essexsoftware.com/batch-pdf-merger/"
+                        icn="picture_as_pdf"
+                        txt="Batch PDF Merger"
+                        txtColor="text-darken-4 blue"
+                        pointer
+                      />
+                      <ListItem
+                        target="_blank"
+                        to="http://www.casasparana.com.br"
+                        icn="construction"
+                        txt="Casas Paraná"
+                        txtColor="text-darken-3 red"
+                        pointer
+                      />
+                      <ListItem
+                        target="_blank"
                         to="http://www.3senergias.com.br/"
-                        icn="battery_charging_full"
+                        icn="lightbulb_circle"
                         txt="3S Website"
-                        txtColor="text-darken-4 red"
+                        txtColor="text-darken-4 green"
                         pointer
                       />
 
@@ -115,7 +131,7 @@ export default class MainPage extends React.Component {
                         to="https://github.com/factn/resilience-app"
                         target="_blank"
                         icn="healing"
-                        txt="MutualAid.World Open-Source App"
+                        txt="MutualAid.World (Open-Source)"
                         txtColor="text-darken-3 grey"
                       />
 
@@ -196,7 +212,7 @@ export default class MainPage extends React.Component {
             <ListItem
               target="_blank"
               to="https://www.github.com/pedro-surf"
-              icn="flare"
+              icn="commit"
               txt="GitHub"
               txtColor="text-darken-4 yellow"
               pointer
@@ -207,14 +223,6 @@ export default class MainPage extends React.Component {
               icn="flip_to_front"
               txt="LinkedIn"
               txtColor="text-accent-2 blue"
-              pointer
-            />
-            <ListItem
-              target="_blank"
-              to="https://www.facebook.com/pedrosilveira97"
-              icn="folder_shared"
-              txt="Facebook"
-              txtColor="text-darken-4 blue"
               pointer
             />
           </div>
