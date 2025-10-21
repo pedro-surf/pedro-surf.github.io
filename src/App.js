@@ -6,7 +6,6 @@ import CoverLetter from "./pages/CoverLetter";
 import Contact from "./pages/Contact";
 import Scholar from "./pages/Scholar";
 import Resume from "./pages/Resume";
-import ComponentsPage from "./pages/ComponentsPage";
 import MainPage from "./pages/MainPage";
 import ScrollToTop from "./ScrollToTop";
 class App extends Component {
@@ -17,7 +16,6 @@ class App extends Component {
           <ScrollToTop />
           <Route exact path="/" component={MainPage} />
           <Route exact path="/letter" component={CoverLetter} />
-          <Route exact path="/components" component={ComponentsPage} />
           <Route exact path="/scholar" component={Scholar} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/cv" component={Resume} />

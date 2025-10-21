@@ -16,9 +16,9 @@ export default class MainPage extends React.Component {
   render() {
     return (
       <>
-        <div className="psyk">
+        <div className="main-container">
           <span>
-            <em> Oh, a guest! Welcome, it's nice to have you here.</em>
+            <em>Oh, a guest! Welcome — glad you’re here.</em>
           </span>
 
           <div className="row">
@@ -44,7 +44,8 @@ export default class MainPage extends React.Component {
                 }
               />
               <h2 className="white-text left-align">
-                Hello! Pedro Silveira, web developer. At your service.{" "}
+                Hello! Pedro Silveira, Senior Software Engineer at your
+                service.
               </h2>
             </div>
             <div className="col s12 m6">
@@ -54,15 +55,24 @@ export default class MainPage extends React.Component {
                 btn="About me"
                 html={
                   <ul className="collection">
-                    <Link to="/contact" className="collection-item red-text">
+                    <Link
+                      to="/contact"
+                      className="collection-item blue-text text-darken-3"
+                    >
                       <i className="tiny material-icons">feedback</i>
                       {"  "} Contact
                     </Link>
-                    <Link to="/cv" className="collection-item red-text">
+                    <Link
+                      to="/cv"
+                      className="valign-wrapper collection-item blue-text text-darken-3"
+                    >
                       <i className="tiny material-icons">spa</i>
                       {"  "}Skills
                     </Link>
-                    <Link to="/letter" className="collection-item red-text">
+                    <Link
+                      to="/letter"
+                      className="collection-item blue-text text-darken-3"
+                    >
                       <i className="tiny material-icons">markunread</i>
                       {"  "} Cover Letter
                     </Link>
@@ -159,52 +169,28 @@ export default class MainPage extends React.Component {
             </div>
           </div>
           <div className="row">
-            <p className="flow-text">
-              I'm a Computer Engineering student at
-              <ToolTip
-                tTipText="Universidade Federal de Santa Catarina"
-                // pos="top"
-                tTipBtn={
-                  <ListItem
-                    target="_blank"
-                    to="https://ufsc.br/"
-                    txt="UFSC"
-                    txtColor="text-darken-4 yellow"
-                    pointer
-                  />
-                }
-              />
-            </p>
-            <p className="flow-text">
-              I work mainly with the {"  "}
-              <span style={{ cursor: "pointer", fontSize: "34px" }}>
+            <div className="col s12">
+              <h3 className="flow-text left-align">
+                Experienced with React, Node.js, and SQL-based backends.
+              </h3>
+              <h4 className="flow-text left-align">
+                Currently wrapping up my studies and pursuiting my Computer
+                Engineering degree at
                 <ToolTip
-                  tTipBtn="M"
-                  pos="top"
-                  tTipText="Mongoose"
-                  color="text-accent-2 blue"
-                ></ToolTip>
-                <ToolTip
-                  color="text-darken-3 yellow"
-                  tTipBtn="E"
-                  pos="top"
-                  tTipText="Express"
-                ></ToolTip>
-                <ToolTip
-                  tTipBtn="R"
-                  pos="top"
-                  tTipText="React"
-                  color="text-accent-2 blue"
-                ></ToolTip>
-                <ToolTip
-                  color="text-darken-3 yellow"
-                  tTipBtn="N"
-                  pos="top"
-                  tTipText="Node.js"
-                ></ToolTip>{" "}
-              </span>
-              stack.
-            </p>
+                  tTipText="Universidade Federal de Santa Catarina"
+                  // pos="top"
+                  tTipBtn={
+                    <ListItem
+                      target="_blank"
+                      to="https://ufsc.br/"
+                      txt="UFSC"
+                      txtColor="text-darken-4 yellow"
+                      pointer
+                    />
+                  }
+                />
+              </h4>
+            </div>
           </div>
         </div>
         <div className="container">
@@ -226,7 +212,12 @@ export default class MainPage extends React.Component {
               pointer
             />
           </div>
-          <h2 className="grey-text text-darken-2">My mission is...</h2>
+          <h2
+            className="grey-text text-darken-2"
+            style={{ marginBottom: "3rem" }}
+          >
+            My mission is...
+          </h2>
           <div className="row">
             <div className="col s12 m6">
               <HorizontalCard
@@ -253,32 +244,32 @@ export default class MainPage extends React.Component {
                     <i className="large material-icons">code</i>
                   </span>
                 }
-                txtHead={"I'm pushing efforts "}
-                txt="to learn new technologies, search the best options to deliver solutions, understand stack/tools in use to work with designers and other Devs."
-                link1={"Check Skills"}
+                txtHead={"I am committed to  "}
+                txt="Exploring emerging technologies, optimizing tool choices for efficient solutions, and collaborating across product, engineering and design to deliver high-quality products."
+                link1="My Skills"
                 link1To={"/cv"}
-                title="as a Dev"
+                title="as a Software Engineer"
               />{" "}
             </div>
           </div>
           <div className="row">
-            <li className="collection-item active text black">
-              This project uses:
-            </li>
-            <ListItem
-              target="_blank"
-              to="https://github.com/facebook/react"
-              icn="center_focus_weak"
-              txt="React"
-              txtColor="text-darken-4 yellow"
-            />
-            <ListItem
-              target="_blank"
-              to="https://materializecss.com/"
-              icn="border_color"
-              txt="Materialize"
-              txtColor="text-darken-4 red"
-            />
+            <h2 className="grey-text text-darken-2"> This project uses: </h2>
+            <ul className="collection-item active text-darken-4">
+              <ListItem
+                target="_blank"
+                to="https://github.com/facebook/react"
+                icn="center_focus_weak"
+                txt="React"
+                txtColor="text-darken-4 yellow"
+              />
+              <ListItem
+                target="_blank"
+                to="https://materializecss.com/"
+                icn="border_color"
+                txt="Materialize"
+                txtColor="text-darken-4 red"
+              />
+            </ul>
           </div>
         </div>
       </>

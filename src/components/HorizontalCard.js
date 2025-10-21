@@ -11,23 +11,35 @@ const HorizontalCard = ({
   link2To,
   link2,
 }) => (
-  <div className="col s12">
-    <div style={{ height: "350px" }} className="card">
-      <h4 className="header grey-text text-darken-2">{title}</h4>
-      <div style={{ justifyContent: "center", display: "flex" }} className="card-image">{img}</div>
-      <div className="card-stacked">
-        <div className="card-content">
-          <p className="black-text">
-            <span className="flow-text">{txtHead} </span>
-            {txt}
-          </p>
-        </div>
+  <div
+    style={{ minHeight: "425px", display: "flex", flexDirection: "column" }}
+    className="valign-wrapper card-panel hoverable"
+  >
+    <h4 className="header grey-text text-darken-3">{title}</h4>
+    <div className="card-image">{img}</div>
+    <div className="card-content">
+      <span
+        style={{
+          minHeight: "80px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+        className="flow-text"
+      >
+        {txtHead}{" "}
+      </span>
+      <p
+        className=" black-text"
+        style={{ minHeight: "100px" }}
+      >
+        {txt}
+      </p>
 
-        <Link className="flow-text" to={link1To}>
-          {link1 ? link1 : ""}
-        </Link>
-        <Link to={link2To}>{link2 ? link2 : ""}</Link>
-      </div>
+      <Link className="flow-text" style={{ marginTop: "auto" }} to={link1To}>
+        {link1 ? link1 : ""}
+      </Link>
+      <Link to={link2To}>{link2 ? link2 : ""}</Link>
     </div>
   </div>
 );

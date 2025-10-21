@@ -1,22 +1,22 @@
 import React from "react";
 
-function Toggler(props) {
+function Toggler({ icn, btn, color, html }) {
   return (
     <ul
       style={{ border: "0px none black" }}
       className="black-text collapsible hoverable"
     >
       <li>
-        <div className={`collapsible-header ${props.color}-text`}>
-          <i className="material-icons">{props.icn}</i>
-          {props.btn}
+        <div className={`collapsible-header ${color}-text valign-wrapper`}>
+          <i className="tiny material-icons">{icn}</i>
+          <span className="flow-text">{btn}</span>
         </div>
-        {props.html && (
+        {html && (
           <div
             style={{ border: "0px none black" }}
             className="collapsible-body"
           >
-            {props.html}
+            {html}
           </div>
         )}
       </li>

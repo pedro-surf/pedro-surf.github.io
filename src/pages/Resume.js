@@ -14,30 +14,61 @@ export default class Resume extends React.Component {
       <div className="skills">
         <div className="darker">
           <div className="row">
-            <span>
-              <Link to="/" className="btn">
-                {" "}
-                Back to Main Page
-              </Link>
-            </span>
+            <Link style={{ marginTop: ".5rem" }} to="/" className="btn">
+              {" "}
+              Back to Main Page
+            </Link>
           </div>
 
           <div className="col s12">
             <Toggler
               color="yellow lighten-3 "
-              icn="developer_mode"
+              icn="code"
               btn="Software Engineering"
               html={
                 <ul className="collection">
                   <Toggler
+                    color="deep-orange lighten-4 "
+                    icn="view_timeline"
+                    btn="Monitoring, Security, Scalability"
+                    html={
+                      <ul className="collection">
+                        <ListItem
+                          txt="Datadog"
+                          txtColor="text-darken-3 deep-orange"
+                        />
+
+                        <ListItem
+                          txt="Mezmo"
+                          txtColor="text-darken-3 deep-orange"
+                        />
+
+                        <ListItem
+                          txt="Hashing Algorithms, Cryptography, Bcrypt"
+                          txtColor="text-darken-4 yellow"
+                        />
+
+                        <ListItem
+                          txt="Helmet.js"
+                          txtColor="text-darken-4 yellow"
+                        />
+
+                        <ListItem
+                          txt="Passport"
+                          txtColor="text-darken-4 yellow"
+                        />
+                      </ul>
+                    }
+                  />
+                  <Toggler
                     color="red accent-1 "
-                    icn="developer_mode"
+                    icn="dns"
                     btn="Back-End"
                     html={
                       <>
                         <Toggler
                           color="purple lighten-4 "
-                          icn="developer_mode"
+                          icn="dataset"
                           btn="Database"
                           html={
                             <ul className="collection">
@@ -63,8 +94,8 @@ export default class Resume extends React.Component {
                         />
                         <Toggler
                           color="green lighten-2 "
-                          icn="developer_mode"
-                          btn="NodeJS"
+                          icn="javascript"
+                          btn="Node.js"
                           html={
                             <ul className="collection">
                               <ListItem
@@ -78,22 +109,12 @@ export default class Resume extends React.Component {
                               />
 
                               <ListItem
-                                txt="Passport"
-                                txtColor="text-darken-3 green"
-                              />
-
-                              <ListItem
-                                txt="JWT"
+                                txt="Authentication, JWT, Passport"
                                 txtColor="text-darken-3 green"
                               />
 
                               <ListItem
                                 txt="Socket.io"
-                                txtColor="text-darken-3 green"
-                              />
-
-                              <ListItem
-                                txt="GraphQL"
                                 txtColor="text-darken-3 green"
                               />
 
@@ -105,9 +126,25 @@ export default class Resume extends React.Component {
                           }
                         />
                         <Toggler
-                          color="blue lighten-2 "
-                          icn="developer_mode"
-                          btn="Serverless / Lambda"
+                          btn="Messaging, Queues, Event-Driven"
+                          icn="low_priority"
+                          html={
+                            <ul className="collection">
+                              <ListItem
+                                txt="SQS, SNS"
+                                txtColor="text-darken-3 green"
+                              />
+                              <ListItem
+                                txt="Kafka"
+                                txtColor="text-darken-3 green"
+                              />
+                            </ul>
+                          }
+                        />
+                        <Toggler
+                          color="yellow lighten-2 "
+                          icn="cloud"
+                          btn="Serverless, Lambdas"
                           html={
                             <ul className="collection">
                               <ListItem
@@ -115,7 +152,7 @@ export default class Resume extends React.Component {
                                 txtColor="text-darken-3 blue"
                               />
                               <ListItem
-                                txt="State machine"
+                                txt="State machines"
                                 txtColor="text-darken-3 blue"
                               />
                             </ul>
@@ -123,7 +160,7 @@ export default class Resume extends React.Component {
                         />
                         <Toggler
                           color="blue lighten-2 "
-                          icn="developer_mode"
+                          icn="schema"
                           btn="GraphQL"
                           html={
                             <ul className="collection">
@@ -143,8 +180,8 @@ export default class Resume extends React.Component {
                           }
                         />
                         <Toggler
-                          color="blue lighten-2 "
-                          icn="developer_mode"
+                          color="red darken-2 "
+                          icn="data_object"
                           btn="ORM"
                           html={
                             <ul className="collection">
@@ -164,84 +201,7 @@ export default class Resume extends React.Component {
                           }
                         />
                         <Toggler
-                          color="green lighten-2 "
-                          icn="developer_mode"
-                          btn="DevOps"
-                          html={
-                            <ul className="collection">
-                              <ListItem
-                                txt="Kubernetes"
-                                txtColor="text-darken-3 green"
-                              />
-                              <ListItem
-                                txt="CI/CD (Travis, CircleCI, Github Actions)"
-                                txtColor="text-darken-3 green"
-                              />
-
-                              <ListItem
-                                txt="Architecture (microservices, monorepo, monolith)"
-                                txtColor="text-darken-3 green"
-                              />
-
-                              <ListItem
-                                txt="ArgoCD, Jenkins, GitLab CI"
-                                txtColor="text-darken-3 green"
-                              />
-
-                              <ListItem
-                                txt="Webpack, Rollup"
-                                txtColor="text-darken-3 green"
-                              />
-
-                              <ListItem
-                                txt="Docker (basics)"
-                                txtColor="text-darken-3 green"
-                              />
-                              <ListItem
-                                txt="AWS, Heroku, Vercel, GCloud, Netlify"
-                                txtColor="text-darken-3 green"
-                              />
-
-                              <ListItem
-                                txt="Nginx, Traefik"
-                                txtColor="text-darken-3 green"
-                              />
-                            </ul>
-                          }
-                        />
-                        <span>
-                          <ListItem
-                            txt="Mocha, Chai"
-                            txtColor="text-darken-4 yellow"
-                          />
-
-                          <ListItem
-                            txt="Helmet"
-                            txtColor="text-darken-4 yellow"
-                          />
-
-                          <ListItem
-                            txt="Node.js, Express"
-                            txtColor="text-darken-4 yellow"
-                          />
-
-                          <ListItem
-                            txt="Redis"
-                            txtColor="text-darken-4 yellow"
-                          />
-
-                          <ListItem
-                            txt="Passport"
-                            txtColor="text-darken-4 yellow"
-                          />
-
-                          <ListItem
-                            txt="BCrypt"
-                            txtColor="text-darken-4 yellow"
-                          />
-                        </span>
-                        <Toggler
-                          color="blue lighten-2 "
+                          color="gray lighten-2 "
                           icn="developer_mode"
                           btn="Other"
                           html={
@@ -271,35 +231,35 @@ export default class Resume extends React.Component {
                   />
                   <Toggler
                     color="blue lighten-2 "
-                    icn="developer_mode"
+                    icn="call_to_action"
                     btn="Front-End"
                     html={
                       <>
                         <Toggler
-                          color="purple lighten-4 "
-                          icn="developer_mode"
+                          color="blue lighten-5 "
+                          icn="web"
                           btn="React"
                           html={
                             <ul className="collection">
                               <ListItem
-                                txt="Next.js"
-                                txtColor="lighten-3 text-darken-4 purple"
-                              />
-                              <ListItem
-                                txt="React, React Native"
+                                txt="Next.js, Gatsby, Vite"
                                 txtColor="lighten-3 text-darken-4 purple"
                               />
                               <ListItem
                                 txt="Hooks, Context"
                                 txtColor="lighten-3 text-darken-4 purple"
                               />
+
+                              <ListItem
+                                txt="Single SPA / Microfrontends"
+                                txtColor="lighten-3 text-darken-4 purple"
+                              />
                             </ul>
                           }
                         />
-
                         <Toggler
                           color="purple lighten-4 "
-                          icn="developer_mode"
+                          icn="design_services"
                           btn="CSS"
                           html={
                             <ul className="collection">
@@ -343,8 +303,78 @@ export default class Resume extends React.Component {
                     }
                   />
                   <Toggler
+                    color="green lighten-4 "
+                    icn="foundation"
+                    btn="Architecture"
+                    html={
+                      <ul className="collection">
+                        <ListItem
+                          txt="Microservices"
+                          txtColor="text-darken-3 green"
+                        />
+                        <ListItem
+                          txt="Monorepo"
+                          txtColor="text-darken-3 green"
+                        />
+                        <ListItem
+                          txt="Monolith"
+                          txtColor="text-darken-3 green"
+                        />
+                        <ListItem
+                          txt="Serverless"
+                          txtColor="text-darken-3 green"
+                        />
+                        <ListItem
+                          txt="Distributed Systems"
+                          txtColor="text-darken-3 green"
+                        />
+                      </ul>
+                    }
+                  />
+                  <Toggler
+                    color="green lighten-2 "
+                    icn="lan"
+                    btn="Infrastructure, DevOps, CI/CD"
+                    html={
+                      <ul className="collection">
+                        <ListItem
+                          txt="Kubernetes"
+                          txtColor="text-darken-3 green"
+                        />
+                        <ListItem
+                          txt="CI/CD (Travis, CircleCI, Github Actions)"
+                          txtColor="text-darken-3 green"
+                        />
+
+                        <ListItem
+                          txt="ArgoCD, Jenkins, GitLab CI"
+                          txtColor="text-darken-3 green"
+                        />
+
+                        <ListItem
+                          txt="Webpack, Rollup"
+                          txtColor="text-darken-3 green"
+                        />
+
+                        <ListItem
+                          txt="Docker, Docker Compose"
+                          txtColor="text-darken-3 green"
+                        />
+                        <ListItem
+                          txt="AWS, Heroku, Vercel, GCloud, Netlify"
+                          txtColor="text-darken-3 green"
+                        />
+
+                        <ListItem
+                          txt="Nginx, Traefik"
+                          txtColor="text-darken-3 green"
+                        />
+                      </ul>
+                    }
+                  />
+                  <Toggler
                     color="blue lighten-2 "
-                    icn="developer_mode"
+                    icn="checklist"
                     btn="Testing, QA Automation"
                     html={
                       <ul className="collection">
@@ -357,26 +387,67 @@ export default class Resume extends React.Component {
                           txt="Postman, Insomnia"
                           txtColor="text-darken-3 green"
                         />
+
+                        <ListItem
+                          txt="Mocha, Chai"
+                          txtColor="text-darken-4 yellow"
+                        />
                       </ul>
                     }
                   />
                   <Toggler
                     color="purple lighten-4 "
-                    icn="developer_mode"
-                    btn="Electron"
+                    icn="widgets"
+                    btn="Desktop & Mobile"
                     html={
                       <ul className="collection">
                         <ListItem
-                          txt="Desktop Apps"
+                          txt="Electron.js Desktop Applications"
                           txtColor="lighten-3 text-darken-4 purple"
                         />
+
+                        <ListItem
+                          txt="React Native"
+                          txtColor="lighten-3 text-darken-4 purple"
+                        />
+
                         <ListItem
                           txt="Installer, Packager, Updater"
                           txtColor="lighten-3 text-darken-4 purple"
                         />
                         <ListItem
-                          txt="Windows, Linux, macOS"
+                          txt="Publishing, Deployment"
                           txtColor="lighten-3 text-darken-4 purple"
+                        />
+                        <ListItem
+                          txt="Windows, Linux, macOS, iOS, Android"
+                          txtColor="lighten-3 text-darken-4 purple"
+                        />
+
+                        <ListItem
+                          txt="Cross-Platform"
+                          txtColor="lighten-3 text-darken-4 purple"
+                        />
+                      </ul>
+                    }
+                  />
+                  <Toggler
+                    color="deep-orange lighten-4 "
+                    icn="developer_mode"
+                    btn="Low-Level / Embedded"
+                    html={
+                      <ul className="collection">
+                        <ListItem
+                          txt="C, C++, Assembly"
+                          txtColor="text-darken-4 deep-orange"
+                        />
+                        <ListItem
+                          txt="Arduino, ESP32, Raspberry Pi"
+                          txtColor="text-darken-4 deep-orange"
+                        />
+                        <ListItem
+                          txt="IoT, Tensorflow Lite, Edge Impulse"
+                          txtColor="text-darken-4 deep-orange"
                         />
                       </ul>
                     }
@@ -386,18 +457,36 @@ export default class Resume extends React.Component {
             />
             <Toggler
               color="blue accent-3 "
-              icn="developer_mode"
+              icn="model_training"
               btn="AI"
               html={
                 <>
                   <Toggler
                     color="green lighten-2 "
-                    icn="developer_mode"
+                    icn="settings_input_component"
                     btn="Machine Learning"
                     html={
                       <ul className="collection">
+                        <ListItem txt="RAG" txtColor="text-darken-3 green" />
                         <ListItem
-                          txt="RAG (basic)"
+                          txt="Model Training"
+                          txtColor="text-darken-3 green"
+                        />
+                        <ListItem
+                          txt="Tensorflow, PyTorch"
+                          txtColor="text-darken-3 green"
+                        />
+                        <ListItem
+                          txt="Edge AI, Edge Impulse"
+                          txtColor="text-darken-3 green"
+                        />
+                        <ListItem
+                          txt="Hugging Face"
+                          txtColor="text-darken-3 green"
+                        />
+                        <ListItem txt="NLP" txtColor="text-darken-3 green" />
+                        <ListItem
+                          txt="Computer Vision"
                           txtColor="text-darken-3 green"
                         />
                       </ul>
@@ -405,16 +494,16 @@ export default class Resume extends React.Component {
                   />
                   <Toggler
                     color="purple lighten-4 "
-                    icn="developer_mode"
+                    icn="support_agent"
                     btn="Agents, Prompt Engineering"
                     html={
                       <ul className="collection">
                         <ListItem
-                          txt="Prompt Engineering"
+                          txt="Worked with Devin, Claude, OpenAI"
                           txtColor="lighten-3 text-darken-4 purple"
                         />
                         <ListItem
-                          txt="Worked with Devin, Claude, ChatGPT"
+                          txt="Windsurf, Cursor"
                           txtColor="lighten-3 text-darken-4 purple"
                         />
                       </ul>
